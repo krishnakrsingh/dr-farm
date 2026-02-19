@@ -1,0 +1,85 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 56% 91%;
+    --foreground: 79 30% 10%;
+    --card: 60 56% 95%;
+    --card-foreground: 79 30% 10%;
+    --popover: 60 56% 91%;
+    --popover-foreground: 79 30% 10%;
+    --primary: 79 54% 35%;
+    --primary-foreground: 60 56% 95%;
+    --secondary: 79 20% 85%;
+    --secondary-foreground: 79 54% 20%;
+    --muted: 79 10% 80%;
+    --muted-foreground: 79 30% 40%;
+    --accent: 51 100% 50%;
+    --accent-foreground: 79 54% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 79 30% 80%;
+    --input: 79 30% 80%;
+    --ring: 79 54% 35%;
+    --chart-1: 79 54% 35%;
+    --chart-2: 51 100% 50%;
+    --chart-3: 35 100% 50%;
+    --chart-4: 160 60% 45%;
+    --chart-5: 30 80% 55%;
+    --radius: 0.75rem;
+
+    /* Sidebar variables (required by shadcn sidebar component) */
+    --sidebar-background: 60 56% 95%;
+    --sidebar-foreground: 79 30% 10%;
+    --sidebar-primary: 79 54% 35%;
+    --sidebar-primary-foreground: 60 56% 95%;
+    --sidebar-accent: 51 100% 50%;
+    --sidebar-accent-foreground: 79 54% 15%;
+    --sidebar-border: 79 30% 80%;
+    --sidebar-ring: 79 54% 35%;
+  }
+  .dark {
+    --background: 79 30% 10%;
+    --foreground: 60 56% 91%;
+    --card: 79 30% 12%;
+    --card-foreground: 60 56% 91%;
+    --popover: 79 30% 10%;
+    --popover-foreground: 60 56% 91%;
+    --primary: 79 54% 45%;
+    --primary-foreground: 79 30% 5%;
+    --secondary: 79 30% 20%;
+    --secondary-foreground: 60 56% 91%;
+    --muted: 79 30% 25%;
+    --muted-foreground: 79 20% 70%;
+    --accent: 51 100% 50%;
+    --accent-foreground: 79 30% 5%;
+    --border: 79 30% 25%;
+    --input: 79 30% 25%;
+    --ring: 79 54% 45%;
+
+    /* Sidebar dark mode */
+    --sidebar-background: 79 30% 12%;
+    --sidebar-foreground: 60 56% 91%;
+    --sidebar-primary: 79 54% 45%;
+    --sidebar-primary-foreground: 79 30% 5%;
+    --sidebar-accent: 51 100% 50%;
+    --sidebar-accent-foreground: 79 30% 5%;
+    --sidebar-border: 79 30% 25%;
+    --sidebar-ring: 79 54% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
